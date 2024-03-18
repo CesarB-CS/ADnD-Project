@@ -55,7 +55,7 @@ public class GrenadeTool {
 			
 		}
 		try{
-			zapfC = Font.createFont(Font.TRUETYPE_FONT, new File("Zapf Calligraphic 801.otf")).deriveFont(30f);
+			zapfC = Font.createFont(Font.TRUETYPE_FONT, new File("Zapf Calligraphic 801.otf")).deriveFont(28f);
 			GraphicsEnvironment gtwo = GraphicsEnvironment.getLocalGraphicsEnvironment();
 			gtwo.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("Zapf Calligraphic 801.otf")));
 		
@@ -376,8 +376,8 @@ public class GrenadeTool {
 	}
 	public void missResult(String grenadeType, char range) {
 		
-		mainTextArea.setText("Your"+grenadeType +" projectile flys out "+ missDirection()+" \ndegrees from the target, missing by " + missDistance(range) +" feet."
-				+ "\n\nWould you like to through another grenade?");
+		mainTextArea.setText("Your"+grenadeType +" projectile flies out "+ missDirection()+" \ndegrees from the target, missing by " + missDistance(range) +" feet."
+				+ "\n\nWould you like to throw another grenade?");
 		step = "multiAttackQ";
 		choice1.setText("yes");
 		choice2.setText("no");
