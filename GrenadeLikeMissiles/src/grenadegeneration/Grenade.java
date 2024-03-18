@@ -163,6 +163,7 @@ public class Grenade {
 		break;
 		case 10:directionMiss = 90;	
 		break;
+		default: System.out.println("no case was hit");
 		
 		}
 		return directionMiss;
